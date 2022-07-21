@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/090d845e74.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* navbar */
+    .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .nav{
+        width: 100%;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        align-items: center;
+    }
+    .logo{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .menu{
+        width: 58%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .menu>a,.logo>a{
+        color: white;
+        text-decoration: none;
+    }
+    .menu>button{
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid white;
+        height: 30px;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 5px;
+        margin-top: -5px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .menu>button:hover{
+        background-color: green;
+        color: white;
+    }
+
+    #dot{
+        color: green;
+        border-radius: 50%;
+    }
+
+
+
+    /* navbar after effects */
+    .sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index:10 ;
+    }
+    .sticky>div>a{
+        color: #404145;
+    }
+    .sticky>div>a:hover{
+        color: green;
+    }
+    .sticky>div:last-child>button{
+        color: green;
+        border: 1px solid green;
+    }
+    .sticky>div:last-child>button:hover{
+        color: white;
+        border: 1px solid green;
+    }
+
+
+
+    /* searchbar */
+    .searchbar,.searchbar-crouse{
+        display: flex;
+        align-items: center;
+        width: 30%;
+        
+    }
+    .searchbar>input,.searchbar-crouse>input{
+        height: 45px;
+        border-radius: 5px 0px 0px 5px;
+        width: 85%;
+        border: .5px solid grey;
+        padding: 10px;
+        font-size: 18px;
+    }
+    .searchbar>button,.searchbar-crouse>button{
+        width: 15%;
+        height: 45px;
+        border-radius: 0px 5px 5px 0px;
+        border: .5px solid grey;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+    }
+    /* crouser */
+    #crouse{
+        width: 100%;
+    }
+    #crouse>img{
+        width: 110%;
+        
+    }
+    .content-crouse{
+        position: absolute;
+        top: 30%;
+        left: 2%;
+        width: 52%;
+        color: white;
+        font-size: 22px;
+    }
+    .searchbar-crouse{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .searchbar-crouse>button{
+        background-color: #1dbf73;
+        font-weight: bold;
+    }
+    .searchbar-crouse>button:hover{
+        background-color: green;
+    }
+    #popular-crouser{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        font-size: 14px;
+        width: 80%;
+        align-items: center;
+    }
+    #popular-crouser>button{
+        background-color: rgba(255, 255, 255, 0.003);
+        border: .5px solid white;
+        color: white;
+        padding: 3px 8px 3px 8px;
+        border-radius: 20px;
+    }
+    #popular-crouser>button:hover{
+        background-color: white;
+        color: rgb(49, 49, 49);
+        transition: 500ms;
+    }
+
+</style>
+<body>
+    <!-- navbar -->
+    <div class="header">
+        <nav class="nav">
+            <div class="logo"><a href="index.html">fiverr</a><span id="dot">.</span></div>
+            <div class="searchbar"></div>
+            <div class="menu">
+                <a href="">Fiver Business</a>
+                <a href="">Explore</a>
+                <a href="">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>English</span>
+                </a>
+                <a href="">₹ INR</a>
+                <a href="">Become a Seller</a>
+                <a href="">Sign In</a>
+                <button>
+                    Join
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- crouser -->
+
+    <img src="/image/bg-hero-1-1792-x1.png" alt="" id="img_crouse">
+</div>
+
+<section>
+    sandeep
+</section>
+<div id="seconnd" >
+    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_2.0/v1/attachments/generic_asset/asset/ae11e2d45410b0eded7fba0e46b09dbd-1598561917003/wordpress-2x.png" alt="">
+    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_2.0/v1/attachments/generic_asset/asset/ae11e2d45410b0eded7fba0e46b09dbd-1598561917003/wordpress-2x.png" alt="">
+    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_2.0/v1/attachments/generic_asset/asset/ae11e2d45410b0eded7fba0e46b09dbd-1598561917003/wordpress-2x.png" alt="">
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_2.0/v1/attachments/generic_asset/asset/ae11e2d45410b0eded7fba0e46b09dbd-1598561917003/wordpress-2x.png" alt="">
+</div>
+
+</body>
+</html>
+<script>
+    //navbar
+let navbar = document.querySelector(".nav")
+let menu = document.querySelector(".menu")
+window.onscroll = function (){
+    if (window.pageYOffset >= menu.offsetTop){
+        navbar.classList.add("sticky")
+        insert()
+    } 
+    else {
+        navbar.classList.remove("sticky")
+        insert1()
+    }
+}
+
+function insert (){
+    let searchbar = document.querySelector(".searchbar")
+    searchbar.innerHTML=`<input type="text" placeholder="What services are you looking for">
+    <button><i class="fa-solid fa-magnifying-glass"></i></button>`
+}
+function insert1 (){
+    let searchbar = document.querySelector(".searchbar")
+    searchbar.innerHTML=null;
+}
+
+
+</script>
