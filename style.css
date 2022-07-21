@@ -7,7 +7,7 @@
 body {
     color: #404145;
     background-color: #fff;
-    font: 400 16px/24px Poppins,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font: 400 16px/24px "Poppins",Helvetica Neue,Helvetica,Arial,sans-serif;
     position: relative;
     width: 100%;
 }
@@ -108,6 +108,7 @@ ul {
     -webkit-transition: 70ms cubic-bezier(.75,0,.25,1);
     -o-transition: 70ms cubic-bezier(.75,0,.25,1);
     transition: 70ms cubic-bezier(.75,0,.25,1);
+
 }
 
 .bg-co-green-700 {
@@ -272,7 +273,6 @@ ul {
 }
 .font-en{
     padding: 0 0 24px;
-    /* width: 0%; */
     line-height: 1.2;
     font-size: 32px;
     color: #003912;
@@ -281,28 +281,30 @@ ul {
 
 .closureBox{
     position:relative;
-    width:80%;
+    width:77%;
     margin: 0 auto;
     height: 290px;
+    overflow: hidden;
     
 }
 
 .slider{
-    /* background-color: #0d084d; */
-    /* padding: 20px; */
     height: 100%;
     position: relative;
-    /* transition: ease-in; */
+    transition: transform 350ms ease-in;
+    z-index: -1;
+
+   
     
 }
 .content{
     position: absolute;
     top: 0;
     bottom: 0;
-    width : 1222.546875px
-    
- 
+    width : 1222.546875px;
+
 }
+
 .video>img{
     height: 290px
 }
@@ -320,7 +322,7 @@ ul {
     background-color: #fff;
     position: absolute;
     z-index: 4;
-    top: 50%;
+    top: 57%;
     width: 48px;
     height: 48px;
     transform: translate(-50%);
@@ -334,6 +336,104 @@ ul {
     border-radius: 50%;
 }
 .slick-next{
-    right: -25px;
+    right: 155px;
     -webkit-transform:rotate(180deg);
 }
+.slick-prev{
+    left: 180px;
+    /* -webkit-transform:rotate(180deg); */
+}
+
+.closureBox>.slider>.currentSlide{
+    display: flex;
+   
+}
+
+
+
+.video::after{
+    content: "";
+    display: inline-block;
+    background: url(https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/desktop-play-button.c1196d6.png) no-repeat;
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 22%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+/* Logo Maker */
+.logo-maker-banner-wrapper{
+   
+    background-color: #446ee7;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-top: 148px;
+}
+
+.descriptions-wrapper {
+    padding: 36px 0 36px 32px;
+    padding-left: 76px;
+   
+}
+
+.logo-maker-banner .desktop-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10%;
+    right: -10%;
+    overflow: hidden;
+}
+
+.bg-co-white{
+    cursor: pointer;
+    background-color: white;
+    color: #446ee7;
+    
+}
+.descriptions-wrapper .description {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.logo-maker-banner .descriptions-wrapper .title {
+    margin-bottom: 8px;
+    padding-bottom: 0;
+    font-size: 34px;
+    line-height: 39px;
+    color: #fff;
+}
+.logo-maker-banner .descriptions-wrapper small {
+    display: block;
+    padding-bottom: 16px;
+}
+
+
+
