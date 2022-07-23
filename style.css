@@ -114,6 +114,7 @@ ul {
 .bg-co-green-700 {
     background-color: #1dbf73;
     color: #fff;
+    margin-left: 20px;
 }
 .bg-co-green-700:hover {
     opacity: 0.8;
@@ -322,7 +323,8 @@ ul {
     background-color: #fff;
     position: absolute;
     z-index: 4;
-    top: 57%;
+   
+    top: 30.5%;
     width: 48px;
     height: 48px;
     transform: translate(-50%);
@@ -349,7 +351,9 @@ ul {
    
 }
 
-
+.mobile-image{
+    display: none;
+}
 
 .video::after{
     content: "";
@@ -386,6 +390,7 @@ ul {
     width: 80%;
     margin: auto;
     margin-top: 148px;
+    margin-bottom: 68px;
 }
 
 .descriptions-wrapper {
@@ -437,3 +442,253 @@ ul {
 
 
 
+@media all and (min-width : 320px ) and (max-width : 850px) {
+
+    .categories-list {
+        display: grid;
+       
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+    .categories {
+        width: 90%;
+     
+    }
+
+    .bg-co-green-700 {
+        /* margin-left: 53px; */
+        margin-bottom: 54px;
+        width: 80%;
+    }
+    .grid-15 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 105%;
+        
+    }
+    .tbody-4{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .fib-banner .business-image img {
+        width: calc(70% + 140px);
+      
+    }
+    .grid-15>div {
+        
+        width: 90%;
+        padding: 0 0px 0 0px;
+    }
+    .business-text>.font-domaine {
+        padding: 0 0 0px;
+        width: 100%;
+        line-height: 1.2;
+        font-size: 32px;
+    }
+    
+    .grid-15>div>ul>li {
+        width: 106%;
+    }
+    .slider>div {
+        display: flex;
+        /* width: 80%; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .closureBox {
+        position: relative;
+        margin: 0 auto;
+        height: 520px;
+        width: 95%;
+        margin: auto;
+    }
+    body>div>.slick-arrow {
+        top: 33.3%;
+    }
+    .video>img {
+        height: 217px;
+        width: 327px;
+    }
+    .content{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width : 600.546875px;
+        left: -60x;
+    
+    }
+    .video{
+        width: 90%;
+    }
+    .video>img{
+        height: 270px
+    }
+    .video:after {
+        top: 27%;
+        left: 34%;
+    }
+    .text-content{
+        padding:5px
+    }
+    .text-content>h5 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .text-content>h5>span {
+        border-left: none ;
+        height: 36px;
+        margin-left: 0px;
+        justify-content: flex-start;
+    }
+    .font-en{
+        width: 65%;
+        font-size: 25px;
+    }
+    .text-content>h5>span>img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 0px;
+        height: 40px;
+    }
+    .slick-arrow{
+        top: 37.3%;
+    }
+    .slick-prev{
+        left: 34px;
+    }
+    .slick-next{
+        right: 10px;
+    }
+
+    /* Box 2 */
+    .content1>.card{
+        width: 480px;
+    }
+    .inspired>a{
+       display: none;
+    }
+    .card>div>img{
+        object-fit: none;
+    }
+    .desktop-image>.image{
+        display: none;
+    }
+    .mobile-image{
+        display: block;
+    }
+   
+    .signupText>div>.text-display {
+        width: 80%;
+        margin-left: 53px;
+
+     
+    }
+    .descriptions-wrapper {
+        padding: 36px 0 36px 20px;
+        padding-left: 26px;
+        /* margin-right: 250px; */
+    }
+    .feverBlock{
+        flex-direction: column;
+    }
+    .descriptions-wrapper>.makelogo{
+        font-size: 31px;
+        line-height: 39px;
+        margin-bottom: 8px;
+        color: #fff;
+    }
+    .logo-maker-banner{
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 15px;
+            width: 100%;
+        
+    }
+    .logo-maker-banner-wrapper{
+        width: 100%;
+    }
+    .footer>.footerBox>.colBox{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .footerlistBox>.footerlist{
+        display: none;
+        animation: dropdown .5s ;
+        /* animation: name duration ; */
+
+      
+    }
+    .footerlistBox>.footerlist.show{
+            display: block;
+    }
+    .footer>.footerBox>.colBox>.col{
+        width: 90%;
+    }
+
+    .bottom{
+        flex-direction: column;
+    }
+    .left{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .left>.text-body-2{
+        margin-bottom: 10px;
+    }
+    .right{
+        flex-direction: column;
+    }
+    .settings-buttons {
+        display: flex;
+        gap: 10px;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .right>.social{
+        justify-content: center;
+        padding-right: 0px;
+        margin-top: 5px;
+    }
+    .fiverr-logo-footer{
+
+    }
+    .signupText>div>.text-display>span{
+        font-size: 35px ;
+    }
+    .feverGuide>.feverimg{
+        width: 100%;
+        margin: auto;
+    }
+    .feverBlock>.feverCard>div>img{
+        width: 300px;
+        height: 200px;
+    }
+    .feverBlock>.feverCard{
+        margin-bottom: 20px;
+    }
+    body>.slick-arrow {
+        top: 32.8%;
+    }
+}
+@keyframes dropdown {
+
+    0% { 
+        opacity: 0;
+        transform: translateY(-60px)
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translateY(0)
+      }
+}
+    
