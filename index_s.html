@@ -600,11 +600,73 @@
       <div class="swiper-button-prev"></div>
     </section>
 
+    <section id="freelance">
+      <div id="freelance_talent">
+        <div>
+          <h1>A whole world of freelance talent at your fingertips</h1>
+          <h5>
+            <i class="fa-solid fa-circle-check"></i> The best for every budget
+          </h5>
+          <p>
+            Find high-quality services at every price point. No hourly rates,
+            just project-based pricing.
+          </p>
+          <h5>
+            <i class="fa-solid fa-circle-check"></i> Quality work done quickly
+          </h5>
+          <p>
+            Find the right freelancer to begin working on your project within
+            minutes.
+          </p>
+          <h5>
+            <i class="fa-solid fa-circle-check"></i> Protected payments, every
+            time
+          </h5>
+          <p>
+            Always know what you'll pay upfront. Your payment isn't released
+            until you approve the work.
+          </p>
+          <h5><i class="fa-solid fa-circle-check"></i> 24/7 support</h5>
+          <p>
+            Questions? Our round-the-clock support team is available to help
+            anytime, anywhere.
+          </p>
+        </div>
+        <div id="plaVideo">
+          <!-- https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/vmvv3czyk2ifedefkau7 -->
 
+          <img
+            src="https://scontent.fdel12-1.fna.fbcdn.net/v/t39.30808-6/294224789_105160488949183_1848686681831462536_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=BGlRCPu9Pk4AX83viq9&_nc_ht=scontent.fdel12-1.fna&oh=00_AT-rMCp2V_uL3KhHUukxL0DYWiZ7WSBQFvtO5EM4yqPyYQ&oe=62DFA6CF"
+            alt=""
+          />
+        </div>
+
+        <div id="vidOnScreen"></div>
+      </div>
+    </section>
   </body>
 </html>
 
 <script>
+  document.querySelector("#plaVideo").addEventListener("click", playVideo);
+
+  function playVideo() {
+    let onscreen = document.getElementById("vidOnScreen");
+    onscreen.innerHTML = `<div id="del" onclick="stopVideo()">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </div>
+          <video width="820vw" height="540vw" controls autoplay>
+            <source
+              src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/vmvv3czyk2ifedefkau7"
+              type="video/mp4"
+            />
+          </video>`;
+  }
+  function stopVideo() {
+    let onscreen = document.getElementById("vidOnScreen");
+    onscreen.innerHTML = null;
+  }
+
   //navbar
   let navbar = document.querySelector(".nav");
   let menu = document.querySelector(".menu");
