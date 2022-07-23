@@ -2,6 +2,23 @@ let tilesContainer = document.querySelector("#tilesContainer");
 let headContainer = document.querySelector("#headContainer");
 getData();
 
+
+let serviceDetails = function(a, b, c, d, e, f, g) {
+    this.usrName = a,
+    this.tilePic = b,
+    this.level = c,
+    this.usrPic = d,
+    this.quote = e
+    this.rating = f,
+    this.price = g
+}
+
+function takeProduct(usrName, tilePic, level, usrPic, quote, rating, p) {
+let service = new serviceDetails(usrName, tilePic, level, usrPic, quote, rating, p);
+localStorage.setItem("productDetails", JSON.stringify(service));
+window.location.href = "/checkOut.html";
+}
+
 async function getData() {
     let url = "/api/fiverrCloneAPI.json";
     url = await fetch(url);
@@ -281,3 +298,5 @@ for(let i = 0; i < data.length; i++) {
           tilesContainer.append(tiles);
         // </div>
     }
+
+

@@ -1,0 +1,68 @@
+*{
+    font: 400 16px/24px Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+
+
+
+/* PLANS MAIN BOX STYLING */
+#plansContainer{
+    border: 1px solid #dadbdd;
+    max-width: 400px;
+    margin: 1%;
+}
+#plansContainer > ul{
+    display: flex;
+
+}
+#planPricing{
+    text-align: right;
+    padding: 4%;
+    font-size: 20px;
+line-height: 24px;
+font-weight: 400;
+}
+#planHeading > li{
+    display: block;
+    padding: 3%;
+    border: 1px solid #dadbdd;
+    width: 40%;
+    text-align: center;
+        
+font-weight: 700;
+color: #74767e;
+}
+#planHeading > li:first-child{
+    color: #1dbf73;
+    border-bottom: solid 2px #1dbf73;;
+}
+#planDescription{
+    padding: 4%;
+    font-size: 14px;
+}
+#planFeaturesDiv {
+    padding: 4%;
+}
+#planFeaturesDiv > ul{
+    list-style-type: none;
+}
+#planFeaturesDiv > ul > li {
+    line-height: 25px;
+    color: #95979d;
+    display: flex;
+    font-size: 14px;
+}
+#chkOutBtn{
+    padding: 3%;
+    background-color: #1dbf73;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    width: 99%;
+    margin-top: 2%;
+}
+#planFeaturesDiv > p{
+    padding: 3%;
+    text-align: center;
+    color: #1dbf73;
+}

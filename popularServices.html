@@ -11,10 +11,162 @@
         padding: 0px;
         box-sizing: border-box;
     }
+
+ 
+
+
+    /* switches */
+
+    .switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #1dbf73;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #1dbf73;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+#switchesContainer{
+    /* border: solid 1px red; */
+    display: flex;
+    width: fit-content;
+    padding: 6px 12px;
+    color: #62646a;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+.switchContainer{
+    display: flex;
+    /* border: solid 1px black; */
+    flex-wrap: wrap;
+    width: fit-content;
+    padding: 6px 12px;
+    margin-right: 10px;
+}
+#selectContainer{
+    /* border: solid 1px green; */
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    padding: 6px 12px;
+    color: #222325;
+    font-weight: 600;
+}
+.selectBtn{
+    border: 1px solid #dadbdd;
+    padding: 6px 12px;
+    margin-right: 10px;
+}
+#filterNSortSection{
+    /* border: solid 1px orange; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font: 400 16px/24px Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 10px;
+  /* box-shadow: 0 .266px 1.13052px rgba(0,0,0,.069),0 .89345px 3.79717px rgba(0,0,0,.101),0 5px 17px rgba(0,0,0,.17); */
+}
+
 </style>
 </head>
 <body>
     <div id="headContainer"></div><!-- The head section will be displayed in this container -->
+
+    <div id="filterNSortSection"><!-- The sort section will be display in this container -->
+        <div id="selectContainer">
+            <div class="selectBtn">
+                <div class="selectOption">Service Options</div>
+            </div>
+            <div class="selectBtn">
+                <div class="selectOption">Service Options</div>
+            </div>
+            <div class="selectBtn">
+                <div class="selectOption">Service Options</div>
+            </div>
+        </div>
+
+        <div id="switchesContainer">
+            <div class="switchContainer">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                  <div>Pro Services</div>
+            </div>
+
+            <div class="switchContainer">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <div>Local Sellers</div>
+            </div>
+            <div class="switchContainer">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <div>Online Sellers</div>
+            </div>
+        </div>
+    </div>
+
     <div id="tilesContainer"></div> <!--The services/products will be displayed as cards in grid format-->
 </body>
 </html>
