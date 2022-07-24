@@ -1,0 +1,92 @@
+#tilesContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 3%;
+    padding: 3%;
+    font: 400 16px/24px Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding-top: 0px;
+    margin-bottom: 10%;
+}
+.tiles{
+    border: solid 1px rgb(202, 200, 200);
+    width: 100%;
+    height: fit-content
+}
+#priceVal{
+    display: flex;
+}
+#priceVal > * {
+    font-size: large;
+}
+.tileImg{
+    width: 100%;
+    min-width: 200px;
+}
+.sellerThumb{
+    /* border: solid 1px red; */
+    padding: 5px;
+    display: flex;
+    max-width: 100%;
+}
+.sellerPic{
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.sellerThumbSub{
+    padding-left: 20px;
+}
+.sellerUsername{
+    font-weight: bold;
+}
+.sellerLevel{
+    color: grey;
+}
+.sellerQuote:hover{
+    color: green;
+}
+.tileImg:hover, .sellerQuote:hover, .sellerWishNPriceContainer:hover{
+    cursor: pointer;
+}
+.sellerDescContainer{
+    padding: 5px;
+    /* border: solid 1px green; */
+}
+.sellerRating{
+    padding-top: 10px;
+    color: #ffbe5b;
+    font-weight: bolder;
+}
+.sellerRating > * {
+    font-size: large;
+}
+.sellerWishNPriceContainer{
+    border-top: solid 1px rgb(202, 200, 200);
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+}
+.sellerWishNPriceContainer > div{
+    /* border: solid 1px black; */
+    padding: 5px;
+}
+.wishListIcon{
+    color: #b5b6ba;
+}
+.startingAt{
+    font-size: small;
+    color: #b5b6ba;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 250,
+  'GRAD' 0,
+  'opsz' 48
+}
+.checkOut{
+    text-decoration: none;
+    color: black;
+}
