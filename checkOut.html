@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+    font: 400 16px/24px Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+        #checkOutNav{
+            display: flex;
+            width: 100%;
+            border-bottom: solid 1px rgb(210, 207, 207);
+        }
+        #checkOutNav > li:first-child {
+            margin-left: 2%;
+            border-bottom: solid 2px #1dbf73;
+            color: black;
+        }
+        #checkOutNav > li{
+            display: block;
+            padding: 1%;
+            font-size: 14px;
+            font-weight: 600;
+            color: #74767e;
+        }
+        #checkOutMain{
+            padding: 1%;
+        }
+        #checkOutSub1{
+            padding-left: 2%;
+            max-width: 60%;
+            border: solid 1px black;
+        }
+        #path{
+            padding: 10px;
+        }
+        #quote{
+            color: #404145;
+            font-weight: 700;
+            font-size: 28px;
+            margin-left: 1%;
+            /* max-width: 60%; */
+            line-height: 120%;
+        }
+        #usrContainer{
+            display: flex;
+        }
+        #usrImg{
+            border-radius: 50%;
+            height: 30px;
+        }
+        #usrImgContainer, #usrName, #usrLevel, #rating{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="checkOutNav">
+        <li>Overview</li>
+        <li>About the Seller</li>
+        <li>Compare packages</li>
+        <li>Reviews</li>
+    </ul>
+    <div id="checkOutMain">
+        <div id="checkOutSub1">
+            <p id="path">Writing & Translation Translation > Translation</p>
+            <h2 id="quote">I will translate any digital content from english to vietnamese</h2>
+            <div id="usrContainer">
+                <div id="usrImgContainer">
+                    <img id="usrImg" src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/e8c575c7bd22a01e2bec3e3dcea28231-1655293905372/3852c057-3400-40ba-b72e-f79cddb0814a.png">
+                </div>
+                <p id="usrName">naziachaudary</p>
+                <p id="usrLevel">Level 2 seller</p>
+                <p id="rating">4.3star</p>
+            </div>
+            <div id="tilePic">
+                <img src="https://fiverr-res.cloudinary.com/videos/so_21.11918,t_main1,q_auto,f_auto/l0q87vw5ie4ni0lyn8hf/2d-animation-video-for-your-business.png">
+            </div>
+            <h3>About this Gig</h3>
+            <p>jkshdfh uhsdfh weruhqwer ohqewr </p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let productDetails = JSON.parse(localStorage.getItem("productDetails"));
+    console.log(productDetails);
+</script>

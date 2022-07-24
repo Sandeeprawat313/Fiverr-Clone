@@ -3,6 +3,9 @@
     grid-template-columns: auto auto auto auto;
     grid-gap: 3%;
     padding: 3%;
+    font: 400 16px/24px Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding-top: 0px;
+    margin-bottom: 10%;
 }
 .tiles{
     border: solid 1px rgb(202, 200, 200);
