@@ -1,0 +1,40 @@
+#faqSection{
+    /* border: solid 1px black; */
+    padding: 0% 3% 3% 3%;
+    margin-top: 5%;
+}
+#faqHeading{
+    font-size: 32px;
+    color: #404145;
+font-family: Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+font-weight: 700;
+text-align: center;
+padding: 2%;
+/* border: solid 1px black; */
+}
+.faqQstn{
+    font-weight: 500;
+    font-size: 15px;
+    color: #404145;
+    font: 400 16px/24px Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.faqRply{
+    color: #95979d;
+padding-top: 5px;
+font-size: 15px;
+line-height: 140%;
+font: 400 16px/24px Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#faqGrid {
+display: grid;
+grid-template-columns: auto auto ;
+grid-gap: 3%;
+font: 400 16px/24px Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+padding-top: 0px;
+}
+.faqSub{
+/* border: solid 1px rgb(202, 200, 200); */
+width: 100%;
+height: fit-content
+}
