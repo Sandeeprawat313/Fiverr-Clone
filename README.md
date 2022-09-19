@@ -1,7 +1,7 @@
- <h1>Lifestyle Clone</h1>
- <p>Lifestyle is India's leading fashion destination for the latest     trends for multiple categories including men, women and kids'    
- apparel, footwear, handbags, fashion accessories and beauty and
- many more.</p>
+ <h1>Fiverr Clone</h1>
+ <p>Fiverr is a global online marketplace for freelance services.
+                Fiverr’s platform connects freelancers to people or businesses
+                looking to hire...</p>
  
 <ul>
 <li>HTML</li>
